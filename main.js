@@ -38,7 +38,6 @@ const ring = new THREE.Mesh( ringGeometry, ringMaterial);
 scene.add( ring );
 ring.position.set(0,-8,-10);
 
-
 camera.position.z = 5;
 
 var cylinderTargetPosition = -15;
