@@ -42,7 +42,7 @@ ring.position.set(0,-8,-10);
 camera.position.z = 5;
 
 var cylinderTargetPosition = -15;
-var sphereTargetPosition = 10;
+var sphereTargetPosition = 5;
 
 function animate() {
 
