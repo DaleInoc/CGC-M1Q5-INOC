@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 5, 1000 );
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -33,7 +33,7 @@ scene.add( sphere );
 sphere.position.set( 12, -1, -10);
 
 const ringGeometry = new THREE.TorusGeometry(2,0.5,16,100);
-const ringMaterial = new THREE.MeshBasicMaterial( {color: 0x197564 } );
+const ringMaterial = new THREE.MeshDepthMaterial( {color: 0x197564 } );
 const ring = new THREE.Mesh( ringGeometry, ringMaterial);
 scene.add( ring );
 ring.position.set(0,-8,-10);
